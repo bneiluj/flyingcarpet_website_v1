@@ -863,6 +863,10 @@ h6 {
     display: block;
 }
 
+.icon-top .icon .icon-font {
+    max-height: 40px;
+}
+
 .icon-top .icon-block-description {
     padding-top: 25px;
 }
