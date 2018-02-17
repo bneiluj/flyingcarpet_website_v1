@@ -1336,7 +1336,7 @@ blockquote {
 #slvj-background-close {
     width: 100%;
     min-height: 100%;
-    z-index: 31;
+    z-index: -1;
     position: fixed;
     top: 0;
     left: 0;
