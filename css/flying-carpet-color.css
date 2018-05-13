@@ -89,6 +89,10 @@ a:hover, #header.nav-solid nav a:hover {
     color:#fff;
 }
 
+.black-color {
+    color:#000000;
+}
+
 .section-heading h2:after {
     background:#d2b356;
     content:"";
@@ -192,6 +196,12 @@ body {
     font-size: 16px;
     font-weight:300;
     color:#9c9c9c;
+}
+
+/* Rounded Team Images */
+
+.section-heading img.team-image {
+    border-radius: 75px;
 }
 
 /* Testimonial */
