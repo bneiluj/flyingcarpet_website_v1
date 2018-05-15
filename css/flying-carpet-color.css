@@ -194,6 +194,19 @@ body {
     color:#9c9c9c;
 }
 
+.section-one-line {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+}
+
+/* Rounded Team Images */
+
+.section-heading img.team-image {
+    border-radius: 75px;
+}
+
 /* Testimonial */
 
 .testimonial q {
