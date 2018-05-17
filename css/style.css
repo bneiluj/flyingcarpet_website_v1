@@ -991,6 +991,10 @@ blockquote {
 
 /* --------- 6.4 Gallery ---------- */
 
+#gallery {
+    padding-top: 15px!important;
+}
+
 #gallery img {
     max-height: 300px;
 }
