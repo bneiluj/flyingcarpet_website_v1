@@ -45,6 +45,15 @@ $(document).ready(function () {
 		}
 	});
 
+	/* Resize YouTube hardware demo video video iframe height correctly as page resizes */
+	function fixHardwareDemoVideoHeight() {
+		var win = $(this);
+		var galleryImgHeight = $('aside#gallery a:first').height();
+		console.log(galleryImgHeight);
+		$('iframe#hardwareDemoVideo').height(galleryImgHeight);
+	}
+	fixHardwareDemoVideoHeight(); // Initial call
+	$(window).on('resize', fixHardwareDemoVideoHeight); // Repeat call to the function every time page resizes
 });
 
 

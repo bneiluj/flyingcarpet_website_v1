@@ -212,6 +212,12 @@ body {
     text-overflow: ellipsis;
 }
 
+/* Small Partner Logo */
+
+.small-logo {
+    height: 50px!important;
+}
+
 /* Rounded Team Images */
 
 .section-heading img.team-image {
