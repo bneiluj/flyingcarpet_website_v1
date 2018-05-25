@@ -46,14 +46,14 @@ $(document).ready(function () {
 	});
 
 	/* Resize YouTube hardware demo video video iframe height correctly as page resizes */
-	function fixHardwareDemoVideoHeight() {
+	function fixGalleryContentHeight() {
 		var win = $(this);
-		var galleryImgHeight = $('aside#gallery a:first').height();
-		console.log(galleryImgHeight);
-		$('iframe#hardwareDemoVideo').height(galleryImgHeight);
+		var galleryImgHeight = $('aside#gallery .galleryItems:first').height(); // Get the height of the first galleryItem
+		$('aside#gallery .galleryItem:not(:first)').height(galleryImgHeight); // Set height for all galleryItems except the first one (since
+																			  // we're setting all elements to the height of the first one)
 	}
-	fixHardwareDemoVideoHeight(); // Initial call
-	$(window).on('resize', fixHardwareDemoVideoHeight); // Repeat call to the function every time page resizes
+	fixGalleryContentHeight(); // Initial call
+	$(window).on('resize', fixGalleryContentHeight); // Repeat call to the function every time page resizes
 });
 
 
