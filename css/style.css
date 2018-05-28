@@ -53,7 +53,7 @@ p {
     line-height: 25px;
 }
 
-.row img, .row iframe {
+.row img {
     height: auto;
     max-width: 100%;
 }
@@ -693,7 +693,7 @@ nav#nav-mobile a:hover {
 
 /*Alignment*/
 
-img, iframe {
+img {
     vertical-align: top;
 }
 
@@ -702,7 +702,7 @@ img, iframe {
     margin: 0 auto;
 }
 
-a img, a iframe {
+a img {
     border: none;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -995,15 +995,8 @@ blockquote {
     padding-top: 15px!important;
 }
 
-#gallery img, #gallery iframe {
+#gallery img {
     max-height: 300px;
-}
-
-#gallery iframe {
-    /*width: 100%;*/
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
 }
 
 #gallery [class*='col-'] {
